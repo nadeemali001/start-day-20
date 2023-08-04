@@ -10,12 +10,10 @@ RIGHT = 0
 class Snake:
     def __init__(self):
         self.segment = []
-        print("Hello when initialize")
         self.create_snake()
         self.head = self.segment[0]
 
     def create_snake(self):
-        print("Hello when create")
         for pos in STARTING_POSITION:
             s = Turtle('square')
             s.color("white")
